@@ -3,7 +3,7 @@
 $ptr = fopen('.env', 'r');
 
 while(!feof($ptr)) {
-    $line = fgets($ptr);
+    $line = trim(fgets($ptr));
     putenv($line);
 } 
 fclose($ptr);

@@ -2,9 +2,9 @@
 
 include('config.php');
 
-$dbname = (string)getenv('DBNAME');
-$user = (string)getenv('USER');
-$password = (string)getenv('PASSWORD');
+$dbname = getenv('DBNAME');
+$user = getenv('USER');
+$password = getenv('PASSWORD');
 
 try{
     $pdo_options = array(
